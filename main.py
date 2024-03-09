@@ -23,23 +23,8 @@ import pandas as pd
 # In[8]:
 
 
-import pandas as pd
-import os
-
-# Get the current script's directory
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Construct the relative path to the data directory
-data_dir = os.path.join(script_dir, '..', 'data')
-
-# Define the file name
-file_name = 'kalimati.csv'
-
-# Construct the full path to the CSV file
-file_path = os.path.join(data_dir, file_name)
-
-# Read the CSV file
-df = pd.read_csv(file_path, na_values="=")
+df = pd.read_csv('C:\\Users\\Dell\\Downloads\\kalimati.csv' ,na_values="=")
+df
 
 
 
